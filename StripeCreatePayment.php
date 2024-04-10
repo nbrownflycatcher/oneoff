@@ -38,19 +38,14 @@ class StripeCreatePayment implements BeforeSave
 
     public function beforeSave(Entity $entity, SaveOptions $options): void
     {
-        // 'amount' => $entity->get('grandTotalAmount'),
-        // 'amountCurrency' => $entity->get('grandTotalAmountCurrency'),
-
-        if($entity->isNew() && $entity->get('transactionLink') == 'created'){
+        if ($entity->isNew() && $entity->get('transactionLink') == 'created') {
             $amount = 75;
-            if (str_contains($entity->get('name'), 'Engine')) { 
+            if (str_contains($entity->get('name'), 'Engine')) {
                 $amount = 150;
-            }else if(str_contains($entity->get('name'), 'Transmission')) {
+            } elseif (str_contains($entity->get('name'), 'Transmission')) {
                 $amount = 100;
-
             }
             $transaction = $this->entityManager->createEntity('StripeTransaction', [
-                // 'name' => $entity->get('name') ?: 'Payment for invoice',
                 'name' => 'Finder Fee',
                 'status' => 'active',
                 'transactionLink' => 'created',
@@ -61,37 +56,22 @@ class StripeCreatePayment implements BeforeSave
             ]);
             $this->entityManager->saveEntity($transaction);
             $entity->set('stripeUrl', $transaction->get('paymentUrl'));
-        }
 
-        $GLOBALS['log']->error($entity->get('status'));
-
-        if($entity->get('status') == 'Paid' && $entity->getFetched('status') != 'Paid' ) {
-
+            // Send email only when a new invoice is created
             $lead = $this->entityManager->getEntityById('Lead', $entity->get('leadId'));
             $partVendor = $this->entityManager->getEntityById('PartVendor', $entity->get('partVendorId'));
-            $name = str_replace("&","and", $partVendor->get('name'));
-            /////////////////////////////Mcg Logic /////////////////
-            $body = "Dear Customer, Here is your Yard Details. Name : $name , Email : ".$partVendor->get('emailAddress').", Number : ".$partVendor->get('phoneNumber').", Address : ".$partVendor->get('billingAddressStreet').", Stock : ".$entity->get('stock');
-            
-            $GLOBALS['log']->error('====================');
-            $GLOBALS['log']->error($body);
-            $GLOBALS['log']->error('====================');
-
-
-            // $body = "Dear Customer, Here is your Yard Details. $name , ".$partVendor->get('emailAddress').",  ".$partVendor->get('phoneNumber').", ".$partVendor->get('billingAddressStreet').", Stock# : ".$entity->get('stock');
-            
+            $name = str_replace("&", "and", $partVendor->get('name'));
+            //$body = "Dear Customer, Here is your Yard Details. Name: $name, Email: " . $partVendor->get('emailAddress') . ", Number: " . $partVendor->get('phoneNumber') . ", Address: " . $partVendor->get('billingAddressStreet') . ", Stock: " . $entity->get('stock');
+	    $body = "Dear Customer, Here is your Yard Details.\n\n" .
+        	"Name: $name\n" .
+        	"Email: " . $partVendor->get('emailAddress') . "\n" .
+        	"Number: " . $partVendor->get('phoneNumber') . "\n" .
+        	"Address: " . $partVendor->get('billingAddressStreet') . "\n" .
+        	"Stock: " . $entity->get('stock');
             $this->sendSms($lead->get('phoneNumber'), $body);
-            
-            // $url = 'https://app2.simpletexting.com/v1/send?token=55e08c1d8c4a827998a3bb28c1053c36&phone='.$lead->get('phoneNumber').'&message='.$body;
-            // $url = str_replace(" ", '%20', $url);
-            
-            // $ch = curl_init();
-            // curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            // curl_setopt($ch, CURLOPT_URL, $url);
-            // $res = curl_exec($ch);
-            
-            // $GLOBALS['log']->error($body);
         }
+
+        // Additional logic for other conditions or actions
 
         $toProcess =
             (
@@ -107,6 +87,7 @@ class StripeCreatePayment implements BeforeSave
             return;
         }
 
+        $amount = 75; // You may need to define $amount here as per your logic
         $transaction = $this->entityManager->createEntity('StripeTransaction', [
             'name' => 'Finder Fee',
             'status' => 'active',
@@ -119,30 +100,31 @@ class StripeCreatePayment implements BeforeSave
         $entity->set('stripeUrl', $transaction->get('paymentUrl'));
     }
 
-    public function sendSms($phone, $body) {
+    public function sendSms($phone, $body)
+    {
         $curl = curl_init();
-        $body = str_replace(" ","%20", $body);
-        $body = str_replace("#"," ", $body);
+        $body = str_replace(" ", "%20", $body);
+        $body = str_replace("#", " ", $body);
         curl_setopt_array($curl, array(
-                            CURLOPT_URL => "https://app2.simpletexting.com/v1/send?token=55e08c1d8c4a827998a3bb28c1053c36&phone=$phone&message=$body",
-                            CURLOPT_RETURNTRANSFER => true,
-                            CURLOPT_ENCODING => "",
-                            CURLOPT_MAXREDIRS => 10,
-                            CURLOPT_TIMEOUT => 30,
-                            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                            CURLOPT_CUSTOMREQUEST => "POST",
-                            CURLOPT_HTTPHEADER => array(
-                            "accept: application/json",
-                            "content-type: application/x-www-form-urlencoded"
-                        ),
-                    ));
-            $response = curl_exec($curl);
-            $err = curl_error($curl);
-            curl_close($curl);
-            if ($err) {
-                $GLOBALS['log']->error("SMS Sendin Error :" . $err);
-            } else {
-                $GLOBALS['log']->error("SMS Send API Resp :" . $response);;
-            }
+            CURLOPT_URL => "https://app2.simpletexting.com/v1/send?token=55e08c1d8c4a827998a3bb28c1053c36&phone=$phone&message=$body",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "POST",
+            CURLOPT_HTTPHEADER => array(
+                "accept: application/json",
+                "content-type: application/x-www-form-urlencoded"
+            ),
+        ));
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        curl_close($curl);
+        if ($err) {
+            $GLOBALS['log']->error("SMS Sending Error: " . $err);
+        } else {
+            $GLOBALS['log']->error("SMS Send API Response: " . $response);
+        }
     }
 }
