@@ -1,0 +1,96 @@
+[2024-04-10 01:56:26] ERROR: Draft  
+[2024-04-10 01:56:26] ERROR: Draft  
+[2024-04-10 01:58:32] ERROR: SMS Send API Resp :{"code":1,"message":"The request succeeded","smsid":"6615f248ed61ea46348d86b8"}  
+[2024-04-10 01:58:32] ERROR: Sent To +13175589717  
+[2024-04-10 02:00:14] ERROR: SMS Send API Resp :{"code":1,"message":"The request succeeded","smsid":"6615f2aedcb2541d4d5d7733"}  
+[2024-04-10 02:00:14] ERROR: Sent To +13174108706  
+[2024-04-10 02:03:32] ERROR: Dear Customer, Welcome To Metallo Delivers. We are working on your Quotes Regarding your Part Rear differential. Thank you    
+[2024-04-10 02:03:32] ERROR:  Running lead logic flow 333!!   
+[2024-04-10 02:05:05] ERROR: Dear Customer, Welcome To Metallo Delivers. We are working on your Quotes Regarding your Part Transfer case. Thank you    
+[2024-04-10 02:05:05] ERROR:  Running lead logic flow 333!!   
+[2024-04-10 02:05:22] ERROR:  Running lead logic flow 333!!   
+[2024-04-10 02:05:33] ERROR:  Running lead logic flow 333!!   
+[2024-04-10 02:06:05] ERROR: JobManager: Failed job running, job '6615f3e24536febda'. Workflow[65c2b540e25840df1][sendEmail]: To email address is empty.; at /var/www/html/espo/custom/Espo/Modules/Advanced/Tools/Workflow/SendEmailService.php:141.  
+[2024-04-10 02:06:40] ERROR: SMS Send API Resp :{"code":1,"message":"The request succeeded","smsid":"6615f4309100820f02d794d5"}  
+[2024-04-10 02:06:40] ERROR: Sent To +13174108706  
+[2024-04-10 02:07:04] ERROR: JobManager: Failed job running, job '6615f3e24536febda'. Workflow[65c2b540e25840df1][sendEmail]: To email address is empty.; at /var/www/html/espo/custom/Espo/Modules/Advanced/Tools/Workflow/SendEmailService.php:141.  
+[2024-04-10 02:07:27] ERROR: SMS Send API Resp :{"code":1,"message":"The request succeeded","smsid":"6615f45fed61ea46348d8826"}  
+[2024-04-10 02:07:27] ERROR: Sent To +13173405177  
+[2024-04-10 02:08:35] ERROR: Draft  
+[2024-04-10 02:08:35] ERROR: Draft  
+[2024-04-10 02:09:24] ERROR: Paid  
+[2024-04-10 02:09:24] ERROR: ====================  
+[2024-04-10 02:09:24] ERROR: Dear Customer, Here is your Yard Details. Name : SANDLIAN IRON and METAL , Email : , Number : +18004916529, Address : 3059 NORTH HOOVER RD, WICHITA, KS 67205, Stock : 8943257  
+[2024-04-10 02:09:24] ERROR: ====================  
+[2024-04-10 02:09:24] ERROR: Paid  
+[2024-04-10 02:09:24] ERROR: ====================  
+[2024-04-10 02:09:24] ERROR: Dear Customer, Here is your Yard Details. Name : SANDLIAN IRON and METAL , Email : , Number : +18004916529, Address : 3059 NORTH HOOVER RD, WICHITA, KS 67205, Stock : 8943257  
+[2024-04-10 02:09:24] ERROR: ====================  
+[2024-04-10 02:09:24] ERROR: SMS Send API Resp :{"code":-304,"message":"Invalid message text (exceeds maximum number of characters)"}  
+[2024-04-10 02:09:24] ERROR: SMS Send API Resp :{"code":-304,"message":"Invalid message text (exceeds maximum number of characters)"}  
+[2024-04-10 02:09:58] ERROR: Draft  
+[2024-04-10 02:09:58] ERROR: Draft  
+[2024-04-10 02:10:32] ERROR: Paid  
+[2024-04-10 02:10:32] ERROR: Paid  
+[2024-04-10 02:10:32] ERROR: ====================  
+[2024-04-10 02:10:32] ERROR: Dear Customer, Here is your Yard Details. Name : MORRIS AUTO , Email : , Number : +13205891978, Address : 23570 STATE HWY 9, MORRIS , MN 56267, Stock : st43  
+[2024-04-10 02:10:32] ERROR: ====================  
+[2024-04-10 02:10:32] ERROR: ====================  
+[2024-04-10 02:10:32] ERROR: Dear Customer, Here is your Yard Details. Name : MORRIS AUTO , Email : , Number : +13205891978, Address : 23570 STATE HWY 9, MORRIS , MN 56267, Stock : st43  
+[2024-04-10 02:10:32] ERROR: ====================  
+[2024-04-10 02:10:32] ERROR: SMS Send API Resp :{"code":1,"message":"The request succeeded","smsid":"6615f518ed61ea46348d887b"}  
+[2024-04-10 02:10:32] ERROR: SMS Send API Resp :{"code":1,"message":"The request succeeded","smsid":"6615f518ed61ea46348d887a"}  
+[2024-04-10 02:21:11] ERROR: Dear Customer, Welcome To Metallo Delivers. We are working on your Quotes Regarding your Part Front axle. Thank you    
+[2024-04-10 02:21:11] ERROR:  Running lead logic flow 333!!   
+[2024-04-10 02:21:32] ERROR:  Running lead logic flow 333!!   
+[2024-04-10 02:21:48] WARNING: (400) Field validation failure; entityType: QuoteItem, field: description, type: required.; PUT /Quote/6615f7ac921f7ea63; line: 62, file: /var/www/html/espo/application/Espo/Core/Exceptions/BadRequest.php  
+[2024-04-10 02:22:37] ERROR: SMS Send API Resp :{"code":1,"message":"The request succeeded","smsid":"6615f7eded61ea46348d8999"}  
+[2024-04-10 02:22:37] ERROR: Sent To +13175589717  
+[2024-04-10 02:23:21] ERROR: Draft  
+[2024-04-10 02:23:21] ERROR: Draft  
+[2024-04-10 02:23:34] ERROR: Draft  
+[2024-04-10 02:23:34] ERROR: Draft  
+[2024-04-10 02:23:45] ERROR: Paid  
+[2024-04-10 02:23:45] ERROR: ====================  
+[2024-04-10 02:23:45] ERROR: Dear Customer, Here is your Yard Details. Name : MCKEE AUTO PARTS , Email : , Number : +17407531100, Address : 2205 BECKLER RD, NEW MARSHFIELD, OH 45766, Stock : Ms23  
+[2024-04-10 02:23:45] ERROR: ====================  
+[2024-04-10 02:23:45] ERROR: Paid  
+[2024-04-10 02:23:45] ERROR: ====================  
+[2024-04-10 02:23:45] ERROR: Dear Customer, Here is your Yard Details. Name : MCKEE AUTO PARTS , Email : , Number : +17407531100, Address : 2205 BECKLER RD, NEW MARSHFIELD, OH 45766, Stock : Ms23  
+[2024-04-10 02:23:45] ERROR: ====================  
+[2024-04-10 02:23:45] ERROR: SMS Send API Resp :{"code":-304,"message":"Invalid message text (exceeds maximum number of characters)"}  
+[2024-04-10 02:23:45] ERROR: SMS Send API Resp :{"code":-304,"message":"Invalid message text (exceeds maximum number of characters)"}  
+[2024-04-10 02:27:29] ERROR: Dear Customer, Welcome To Metallo Delivers. We are working on your Quotes Regarding your Part Front axle. Thank you    
+[2024-04-10 02:27:29] ERROR:  Running lead logic flow 333!!   
+[2024-04-10 02:27:48] ERROR:  Running lead logic flow 333!!   
+[2024-04-10 02:28:34] ERROR: SMS Send API Resp :{"code":1,"message":"The request succeeded","smsid":"6615f952dcb2541d4d5d7a4b"}  
+[2024-04-10 02:28:34] ERROR: Sent To +13175589717  
+[2024-04-10 02:29:16] ERROR: Draft  
+[2024-04-10 02:29:16] ERROR: Draft  
+[2024-04-10 02:29:57] ERROR: Paid  
+[2024-04-10 02:29:57] ERROR: Paid  
+[2024-04-10 02:29:57] ERROR: ====================  
+[2024-04-10 02:29:57] ERROR: Dear Customer, Here is your Yard Details. Name : MCKEE AUTO PARTS , Email : , Number : +17407531100, Address : 2205 BECKLER RD, NEW MARSHFIELD, OH 45766, Stock : Ms23  
+[2024-04-10 02:29:57] ERROR: ====================  
+[2024-04-10 02:29:57] ERROR: ====================  
+[2024-04-10 02:29:57] ERROR: Dear Customer, Here is your Yard Details. Name : MCKEE AUTO PARTS , Email : , Number : +17407531100, Address : 2205 BECKLER RD, NEW MARSHFIELD, OH 45766, Stock : Ms23  
+[2024-04-10 02:29:57] ERROR: ====================  
+[2024-04-10 02:29:57] ERROR: SMS Send API Resp :{"code":-304,"message":"Invalid message text (exceeds maximum number of characters)"}  
+[2024-04-10 02:29:57] ERROR: SMS Send API Resp :{"code":-304,"message":"Invalid message text (exceeds maximum number of characters)"}  
+[2024-04-10 02:30:36] ERROR: Draft  
+[2024-04-10 02:30:36] ERROR: Draft  
+[2024-04-10 02:33:32] WARNING: (400) GET /espo/; line: 72, file: /var/www/html/espo/custom/Espo/Modules/DubasStripeIntegration/EntryPoints/StripeTransaction.php  
+[2024-04-10 02:36:23] ERROR: SMS Send API Resp :{"code":1,"message":"The request succeeded","smsid":"6615fb26dcb2541d4d5d7add"}  
+[2024-04-10 02:36:23] ERROR: Sent To +13173405177  
+[2024-04-10 02:44:52] ERROR: Draft  
+[2024-04-10 02:44:52] ERROR: Draft  
+[2024-04-10 02:45:35] ERROR: Paid  
+[2024-04-10 02:45:35] ERROR: Paid  
+[2024-04-10 02:45:35] ERROR: ====================  
+[2024-04-10 02:45:35] ERROR: Dear Customer, Here is your Yard Details. Name : SANDLIAN IRON and METAL , Email : , Number : +18004916529, Address : 3059 NORTH HOOVER RD, WICHITA, KS 67205, Stock : 8943257  
+[2024-04-10 02:45:35] ERROR: ====================  
+[2024-04-10 02:45:35] ERROR: ====================  
+[2024-04-10 02:45:35] ERROR: Dear Customer, Here is your Yard Details. Name : SANDLIAN IRON and METAL , Email : , Number : +18004916529, Address : 3059 NORTH HOOVER RD, WICHITA, KS 67205, Stock : 8943257  
+[2024-04-10 02:45:35] ERROR: ====================  
+[2024-04-10 02:45:35] ERROR: SMS Send API Resp :{"code":-304,"message":"Invalid message text (exceeds maximum number of characters)"}  
+[2024-04-10 02:45:35] ERROR: SMS Send API Resp :{"code":-304,"message":"Invalid message text (exceeds maximum number of characters)"}  
