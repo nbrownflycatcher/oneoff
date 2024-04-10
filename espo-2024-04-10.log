@@ -94,3 +94,28 @@
 [2024-04-10 02:45:35] ERROR: ====================  
 [2024-04-10 02:45:35] ERROR: SMS Send API Resp :{"code":-304,"message":"Invalid message text (exceeds maximum number of characters)"}  
 [2024-04-10 02:45:35] ERROR: SMS Send API Resp :{"code":-304,"message":"Invalid message text (exceeds maximum number of characters)"}  
+[2024-04-10 03:01:15] ERROR: Dear Customer, Welcome To Metallo Delivers. We are working on your Quotes Regarding your Part Front axle. Thank you    
+[2024-04-10 03:01:15] ERROR:  Running lead logic flow 333!!   
+[2024-04-10 03:02:06] ERROR: JobManager: Failed job running, job '661600fba3357ef28'. Workflow[65c2b564ef336fd30][sendEmail]: To email address is empty.; at /var/www/html/espo/custom/Espo/Modules/Advanced/Tools/Workflow/SendEmailService.php:141.  
+[2024-04-10 03:02:14] ERROR: SMS Send API Resp :{"code":1,"message":"The request succeeded","smsid":"66160135dcb2541d4d5d7d51"}  
+[2024-04-10 03:02:14] ERROR: Sent To +13173405177  
+[2024-04-10 03:03:02] ERROR: SMS Send API Response: {"code":-304,"message":"Invalid message text (exceeds maximum number of characters)"}  
+[2024-04-10 03:03:03] ERROR: JobManager: Failed job running, job '661600fba3357ef28'. Workflow[65c2b564ef336fd30][sendEmail]: To email address is empty.; at /var/www/html/espo/custom/Espo/Modules/Advanced/Tools/Workflow/SendEmailService.php:141.  
+[2024-04-10 03:03:04] ERROR: SMS Send API Response: {"code":-304,"message":"Invalid message text (exceeds maximum number of characters)"}  
+[2024-04-10 03:05:40] ERROR: Dear Customer, Welcome To Metallo Delivers. We are working on your Quotes Regarding your Part Rear axle. Thank you    
+[2024-04-10 03:05:40] ERROR:  Running lead logic flow 333!!   
+[2024-04-10 03:11:32] ERROR:  Running lead logic flow 333!!   
+[2024-04-10 03:12:04] ERROR: JobManager: Failed job running, job '6616036504760d244'. Workflow[65c2b58669310ec0c][sendEmail]: To email address is empty.; at /var/www/html/espo/custom/Espo/Modules/Advanced/Tools/Workflow/SendEmailService.php:141.  
+[2024-04-10 03:12:53] ERROR: SMS Send API Resp :{"code":1,"message":"The request succeeded","smsid":"661603b5dcb2541d4d5d7e16"}  
+[2024-04-10 03:12:53] ERROR: Sent To +13174108706  
+[2024-04-10 03:13:04] ERROR: JobManager: Failed job running, job '6616036504760d244'. Workflow[65c2b58669310ec0c][sendEmail]: To email address is empty.; at /var/www/html/espo/custom/Espo/Modules/Advanced/Tools/Workflow/SendEmailService.php:141.  
+[2024-04-10 03:13:27] ERROR: SMS Send API Response: {"code":1,"message":"The request succeeded","smsid":"661603d6dcb2541d4d5d7e23"}  
+[2024-04-10 03:31:01] ERROR: Dear Customer, Welcome To Metallo Delivers. We are working on your Quotes Regarding your Part Rear axle. Thank you    
+[2024-04-10 03:31:01] ERROR:  Running lead logic flow 333!!   
+[2024-04-10 03:31:04] ERROR: JobManager: Failed job running, job '661607f5b68eaf265'. Workflow[65c2b58669310ec0c][sendEmail]: To email address is empty.; at /var/www/html/espo/custom/Espo/Modules/Advanced/Tools/Workflow/SendEmailService.php:141.  
+[2024-04-10 03:32:03] ERROR: JobManager: Failed job running, job '661607f5b68eaf265'. Workflow[65c2b58669310ec0c][sendEmail]: To email address is empty.; at /var/www/html/espo/custom/Espo/Modules/Advanced/Tools/Workflow/SendEmailService.php:141.  
+[2024-04-10 03:32:21] ERROR: SMS Send API Resp :{"code":1,"message":"The request succeeded","smsid":"66160845dcb2541d4d5d7fb5"}  
+[2024-04-10 03:32:21] ERROR: Sent To +13173405177  
+[2024-04-10 03:32:45] ERROR: SMS Send API Response:   
+[2024-04-10 03:32:56] ERROR: SMS Send API Response:   
+[2024-04-10 03:32:57] ERROR: SMS Send API Response:   
